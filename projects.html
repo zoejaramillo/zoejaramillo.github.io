@@ -1,24 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Projects - Zoe Jaramillo</title>
+  <style>
+    body {
+      margin: 0;
+      font: 16px/1.6 system-ui, sans-serif;
+      background-color: #666666;
+    }
 
+    .projects-header {
+      width: 100%;
+      padding: 60px 20px 20px;  /* spacing from the very top */
+      text-align: center;
+      color: white;
+    }
 
-<header class="projects-header">
-  <h1>Projects</h1>
-</header>
+    .projects-header h1 {
+      margin: 0;
+      font-size: 3em;  /* slightly smaller than homepage title */
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
 
-.projects-header {
-  width: 100%;
-  padding: 60px 20px 20px;  /* pushes it down a bit from the very top */
-  text-align: center;
-  color: white;
-}
+    .card {
+      background-color: #e0e0e0;
+      border: 1px solid black;
+      border-radius: 12px;
+      padding: 16px;
+      margin: 40px auto;
+      max-width: 900px;
+    }
+  </style>
+</head>
+<body>
+  <header class="projects-header">
+    <h1>Projects</h1>
+  </header>
 
-.projects-header h1 {
-  margin: 0;
-  font-size: 3em;  /* slightly smaller than 4em on your main header */
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-}
-
-<section class="card">
-  <h2>4-bit DAC PCB Design</h2>
-  <p>Designed and fabricated a 4-bit Weighted Resistor DAC, using LTspice for simulation and EAGLE for PCB layout,
-integrated with Arduino for real-time audio signal conversion.</p>
-</section>
+  <section class="card">
+    <h2>4-bit DAC PCB Design</h2>
+    <p>Designed and fabricated a 4-bit Weighted Resistor DAC, using LTspice for simulation and EAGLE for PCB layout,
+    integrated with Arduino for real-time audio signal conversion.</p>
+  </section>
+</body>
+</html>
