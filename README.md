@@ -1,4 +1,3 @@
-# zoejaramillo.github.io
 <!-- index.html -->
 <!doctype html>
 <html lang="en">
