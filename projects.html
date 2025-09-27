@@ -13,15 +13,18 @@
    .projects-header {
   width: 100%;
   padding: 60px 20px 20px;  /* spacing from the very top */
-  text-align: center;
-  color: black;             /* make text black */
+  text-align: center;       /* centers inline text like h1 */
+  display: flex;            /* flexbox centers horizontally */
+  justify-content: center;  /* center text horizontally */
 }
 
 .projects-header h1 {
-  margin: 0;
+  margin: 0 auto;           /* auto margins center block elements */
   font-size: 3em;           /* slightly smaller than homepage title */
-  text-shadow: none;        /* remove shadow since it’s black text */
+  color: black;
+  text-shadow: none;
 }
+
 
     .card {
       background-color: #f5f5f5;
