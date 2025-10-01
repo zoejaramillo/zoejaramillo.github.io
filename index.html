@@ -54,10 +54,15 @@
       font-weight: bold;
       text-decoration: none;
       font-size: 1.2em;
-    }
-
+      padding: 6px 12px;       /* add some space so the border looks good */
+      border: 2px solid transparent;  /* invisible border to prevent layout shift */
+      border-radius: 4px;      /* optional: round the corners a bit */
+      transition: all 0.2s ease;
+  }
+  
     nav a:hover {
-      text-decoration: underline;
+      border: 2px solid white;   /* visible border on hover */
+      background-color: rgba(255, 255, 255, 0.1); /* optional highlight */
     }
 
     .card {
