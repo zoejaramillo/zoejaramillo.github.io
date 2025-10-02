@@ -89,7 +89,7 @@
     .card a { 
       text-decoration: none; /* removes underline */ 
       color: inherit; /* makes link same color as surrounding text */ 
-      font-weight: none; /* optional: make it stand out */ }
+      font-weight: normal; /* optional: make it stand out */ }
     
     .linkedin-link { 
       text-decoration: none; 
@@ -102,15 +102,27 @@
     color: white;                  /* dark grey for readability */
     line-height: 1.6;  /* spacing between lines */
 }
-  #about h2 {
-    font-family: 'Inter', sans-serif;   /* matches header font */
-    font-size: 3em;                       /* large like Zoe Jaramillo */
-    text-align: center;                   /* centered on screen */
-    color: white;                         /* white text */
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);  /* soft shadow like main header */
-    margin-top: 40px;                     /* space above */
-    margin-bottom: 20px;                  /* space below */
-    border: none;                         /* remove underline from card style */
+  #about {
+  max-width: 900px;          /* keep text readable */
+  margin: 60px auto;         /* center on page */
+  padding: 0 20px;
+  text-align: center;        /* center text */
+}
+#about h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.8em;          /* same size as nav links (1.2em) but scaled up a bit for emphasis */
+  color: white;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  margin-bottom: 20px;
+  border: none;              /* no underline */
+}
+      
+  #about p {
+    font-family: 'Lato', sans-serif;  /* keep body text clean */
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: white;
   }
 
   </style>
@@ -132,7 +144,7 @@
   </header>
 
 
-<section id="about" class="card">
+<section id="about">
   <h2>About Me</h2>
   <p>I am an electrical engineering student at Cal Poly SLO, interested in power electronics, aerospace, and hardware systems such as wiring, PCB design, and space technologies. I bring a strong blend of technical problem-solving and service-oriented experience developed through three years of volunteer work with the police, where I learned to remain adaptable and quick-thinking in fast-paced, unpredictable situations. In addition, I pursue photography with a focus on sports and automotive subjects, while also taking on paid and freelance projects such as graduations and environmental portraits. This work has strengthened my creativity, attention to detail, and adaptability to various client needs.
   </p>
