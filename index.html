@@ -168,11 +168,15 @@
   border-radius: 8px;
   padding: 20px 24px;
   color: white;
-  height: 210px;
   text-align: left;
   flex: 1;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  height: 210px; /* ✅ matches the image height */
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; /* vertically centers the text inside */
 }
+
 
 .contact-card p {
   font-family: 'Inter', sans-serif;
