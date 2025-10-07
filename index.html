@@ -127,43 +127,59 @@
     color: white;
   }
 
-    .contact-section {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  text-align: left;
-  justify-content: center;
+ #contact {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
 }
 
-.contact-img {
-  width: 200px;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 4px;
-}
-  #contact {
-  max-width: 900px;          /* keep text readable */
-  margin: 60px auto;         /* center on page */
-  padding: 0 20px;
-  text-align: center;        /* center text */
-}
-    #contact h2 {
+#contact h2 {
   font-family: 'Inter', sans-serif;
   font-size: 2.2em;
   font-weight: bold;
   color: white;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border: none;
 }
 
-   #contact p {
-    font-family: 'Inter', sans-serif;  /* keep body text clean */
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: white;
-  }
+/* layout for image and card */
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px; /* space between photo and card */
+}
+
+/* image on left */
+.contact-img {
+  width: 200px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+/* card under text only */
+.contact-card {
+  background-color: #84848E;
+  border-radius: 8px;
+  padding: 20px 24px;
+  color: white;
+  text-align: left;
+  flex: 1;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.contact-card p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin: 6px 0;
+}
+
 
 
   </style>
@@ -191,17 +207,19 @@
   </p>
 </section>
 
-<section id="contact" class="card">
+<section id="contact">
   <h2>Contact</h2>
-  <div class="contact-section">
+  <div class="contact-wrapper">
     <img src="linkedinphoto.jpg" alt="Zoe Jaramillo" class="contact-img">
-    <div>
+
+    <div class="contact-card">
       <p>Phone Number: 949-231-0966</p>
       <p>Email: zoejaramillo2024@gmail.com</p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/zoe-jaramillo-277915242/">Zoe Jaramillo</a></p>
     </div>
   </div>
 </section>
+
 
   
   <section id="skills" class="card">
