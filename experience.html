@@ -9,22 +9,27 @@
   
   <style>
 
-    .home-button {
+   .home-button {
   display: inline-block;
-  margin-left: 40px;        /* positions it on the left */
+  margin-left: 40px;
   margin-top: 10px;
-  padding: 8px 16px;
-  background-color: #84848E;
+  padding: 8px 18px;
+  background: rgba(255, 255, 255, 0.1); /* translucent white overlay */
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   border-radius: 6px;
-  transition: background-color 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* soft outline */
+  backdrop-filter: blur(6px); /* gives it a glassy look */
+  transition: all 0.25s ease;
 }
 
 .home-button:hover {
-  background-color: #6d6d78; /* slightly darker on hover */
+  background: rgba(255, 255, 255, 0.25); /* more visible on hover */
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4); /* subtle glow */
 }
+
 
     body {
       margin: 0;
