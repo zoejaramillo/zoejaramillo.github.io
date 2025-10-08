@@ -177,22 +177,39 @@
   justify-content: center;  
 }
 
+    .contact-card {
+  background: rgba(255, 255, 255, 0.1); /* subtle white overlay */
+  border-radius: 8px;
+  padding: 20px 24px;
+  color: white;
+  text-align: left;
+  flex: 1;
+  backdrop-filter: blur(8px); /* gives it the frosted glass look */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* faint white border */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* subtle soft shadow */
+  transition: background 0.25s ease;
+}
 
+.contact-card:hover {
+  background: rgba(255, 255, 255, 0.18); /* slightly lighter on hover */
+}
+
+/*
 .contact-card p {
   font-family: 'Inter', sans-serif;
   font-size: 1.2em;
   line-height: 1.6;
   margin: 6px 0;
 }
-  #contact a {
-  color: #31323D; /* bright blue = #0a66c2 */
-  text-decoration: none; 
-}
 
 #contact a:hover {
     color: #0a66c2;  
 }
-
+    */
+ #contact a {
+  color: #31323D; /* bright blue = #0a66c2 */
+  text-decoration: none; 
+}
 
 
   </style>
