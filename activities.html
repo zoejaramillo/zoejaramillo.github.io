@@ -94,10 +94,12 @@
 }
   
 .card-img2 {
-  width: 50%;   /* scales to half its natural size */
-  height: auto;
+  width: 250px;          /* set a fixed width instead of 50% */
+  height: auto;          /* maintain natural aspect ratio */
   border-radius: 4px;
   display: block;
+  object-fit: contain;   /* ensures the image isn’t stretched */
+  margin: 0 auto;        /* centers the image */
 }
 
 
