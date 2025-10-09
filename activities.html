@@ -101,6 +101,13 @@
   object-fit: contain;   /* ensures the image isn’t stretched */
   margin: 0 auto;        /* centers the image */
 }
+    .card-divider {
+  width: 90%;                              /* shorter than full width */
+  height: 2px;                             /* thin line */
+  background-color: rgba(255, 255, 255, 0.18); /* matches frosted tone */
+  margin: 12px auto 20px auto;             /* space above and below */
+  border-radius: 2px;                      /* soft rounded edges */
+}
 
 
 
@@ -114,6 +121,7 @@
 
   <section class="card">
     <h2>Irvine Police Explorer</h2>
+    <div class="card-divider"></div>
       <p>Police</p>
    <div class="image-row">
       <img src="images/academy.jpg" alt="academy" class="card-img2">
