@@ -86,13 +86,25 @@
   margin: 12px auto; /* adds spacing and centers image */
   display: block;
 }
-.image-row {
-  display: flex;            /* places items in a row */
-  justify-content: center;  /* centers the images */
-  gap: 20px;                /* space between images */
-  margin-top: 12px;
+    
+.text-side {
+  flex: 1;
+  color: white;
+  font-size: 1em;
+  line-height: 1.6;
+  max-width: 400px;
+  display: flex;
+  align-items: center; /* vertically center text next to image */
 }
-  
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* more space between text and image */
+  flex-wrap: wrap; /* allows it to stack on smaller screens */
+}
+
 .card-img2 {
   width: 350px;          /* set a fixed width instead of 50% */
   height: auto;          /* maintain natural aspect ratio */
@@ -123,10 +135,15 @@
     <h2>Irvine Police Explorer</h2>
     <div class="card-divider"></div>
       <p>Police</p>
-   <div class="image-row">
-      <img src="images/academy.jpg" alt="academy" class="card-img2">
-      <img src="images/another.jpg" alt="another" class="card-img">
+    
+<div class="image-row">
+  <div class="text-side">
+    <p>  For over three years, I participated in the Irvine Police Department Explorer program, where I accumulated more than 700 service hours, serving the community and gaining valuable experience in law enforcement. Through this program, I trained for a variety of real-world scenarios, including clearing rooms, conducting field sobriety tests, interviewing suspects, and performing safety checks such as pat-downs for weapons. </p>
   </div>
+  <img src="images/another.jpg" alt="another" class="card-img2">
+</div>
+
+<img src="images/academy.jpg" alt="academy" class="card-img">
   </section>
   
 </body>
