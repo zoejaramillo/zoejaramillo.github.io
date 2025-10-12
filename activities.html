@@ -86,16 +86,18 @@
   gap: 20px; /* more space between text and image */
   flex-wrap: wrap; /* allows it to stack on smaller screens */
 }
-    
- .card-img {
-  width: 900px;      /* sets the width */
-  height: 200px;
-   /* height: auto;       keeps aspect ratio */
+
+    .card-img {
+  width: 900px;          /* desired width */
+  height: 200px;         /* fixed height */
   border-radius: 4px;
-  margin: 6px auto; /* adds spacing and centers image */
+  margin: 6px auto;
   display: block;
+  object-fit: cover;     /* 🔥 crops instead of stretches */
+  object-position: center; /* centers the cropped area */
 }
-    
+
+
 .card-img2 {
   width: 250px;          /* set a fixed width instead of 50% */
   height: auto;          /* maintain natural aspect ratio */
