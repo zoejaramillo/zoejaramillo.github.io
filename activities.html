@@ -99,14 +99,16 @@
 
 
 .card-img2 {
-  width: 280px;          /* smaller overall width */
-  height: 300px;         /* fixed height to allow cropping */
+  width: 280px;
+  height: 300px;
   border-radius: 4px;
   display: block;
-  object-fit: cover;     /* 🔥 crops instead of shrinking/stretching */
-  object-position: center; /* keeps the focus centered */
-  margin: 8px auto;      /* balanced spacing */
+  object-fit: cover;
+  object-position: center;
+  margin: 8px auto;
+  align-self: center; /* ✅ centers image vertically in the flex row */
 }
+
     .card-divider {
   width: 100%;                              /* shorter than full width */
   height: 2px;                             /* thin line */
