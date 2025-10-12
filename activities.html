@@ -99,13 +99,13 @@
 
 
 .card-img2 {
-  width: 350px;          /* set a fixed width instead of 50% */
-  height: auto;          /* maintain natural aspect ratio */
-  border-radius: 4px;
+  width: 280px;          /* smaller overall width */
+  height: 200px;         /* fixed height to allow cropping */
+  border-radius: 6px;
   display: block;
-  object-fit: contain;   /* ensures the image isn’t stretched */
-  margin: 0;
-  margin: 12px auto;/*      centers the image */
+  object-fit: cover;     /* 🔥 crops instead of shrinking/stretching */
+  object-position: center; /* keeps the focus centered */
+  margin: 8px auto;      /* balanced spacing */
 }
     .card-divider {
   width: 100%;                              /* shorter than full width */
