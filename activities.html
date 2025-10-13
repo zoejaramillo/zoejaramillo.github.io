@@ -81,12 +81,15 @@
 
 .image-row {
   display: flex;
-  justify-content: center;
   align-items: flex-start;
-  gap: 20px; /* more space between text and image */
-  flex-wrap: wrap; /* allows it to stack on smaller screens */
+  justify-content: space-between; /* keeps both sides stable */
+  gap: 20px;
 }
 
+.text-side {
+  flex: 0 0 600px; /* fixed text width (stops resizing) */
+}
+    
     .card-img {
   width: 900px;          /* desired width */
   height: 300px;         /* fixed height */
@@ -99,15 +102,13 @@
 }
 
 .card-img2 {
-  width: 260px;
-  height: 280px;          
+  flex-shrink: 0; /* prevents image from pushing or shrinking text */
+  width: 250px;   /* smaller, fixed image width */
+  height: 280px;
   border-radius: 8px;
-  display: block;
   object-fit: cover;
   object-position: center;
-  margin: 0;               /* removes extra space around */
-  align-self: stretch;     /* ✅ ensures full vertical alignment */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 
