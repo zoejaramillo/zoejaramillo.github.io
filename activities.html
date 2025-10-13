@@ -135,6 +135,33 @@
 .photo-header {
   margin-top: 40px; /* adds space above just the photography header */
 }
+.photo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;              /* space between images */
+  flex-wrap: wrap;        /* stack if screen too small */
+  margin-top: 20px;
+}
+
+.photo-square {
+  width: 280px;
+  height: 280px;
+  border-radius: 8px;
+  object-fit: cover;      /* keeps square crop */
+  object-position: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.25s ease;
+}
+
+.photo-square:hover {
+  transform: scale(1.03); /* subtle zoom hover effect */
+}
+
+
+
+
+    
 
   </style>
 </head>
@@ -162,8 +189,11 @@
     <p>For the past several years, I have pursued photography with a focus on automotive and sports subjects, capturing motion, emotion, and energy through creative composition and lighting. In addition to personal projects, I have taken on paid and freelance work, photographing graduations, portraits, and events for clients. </p>
     <p>These experiences have strengthened my creativity, technical precision, and adaptability while teaching me how to work efficiently under varying conditions and meet each client’s unique vision.</p>
     </div>
-<img src="images/nismo.jpg" alt="nismo" class="card-img">
-<img src="images/grad.jpg" alt="grad" class="card-img">
+<div class="photo-row">
+  <img src="images/nismo.jpg" alt="nismo" class="photo-square">
+  <img src="images/grad.jpg" alt="grad" class="photo-square">
+  <img src="images/football.jpg" alt="football" class="photo-square">
+</div>
 
     
     
