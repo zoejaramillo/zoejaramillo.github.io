@@ -97,17 +97,17 @@
   object-position: center; /* centers the cropped area */
 }
 
-
 .card-img2 {
   width: 280px;
-  height: 300px;
+  height: 100%;            /* ✅ makes it scale with the text height */
   border-radius: 4px;
   display: block;
   object-fit: cover;
   object-position: center;
-  margin: 8px auto;
-  align-self: center; /* ✅ centers image vertically in the flex row */
+  margin: 0;               /* removes extra space around */
+  align-self: stretch;     /* ✅ ensures full vertical alignment */
 }
+
 
     .card-divider {
   width: 100%;                              /* shorter than full width */
