@@ -119,11 +119,16 @@
 
   
 .card-img2 {
-  width: 500px;     /* control image size */
-  height: 100px;
-  border-radius: 4px;
-  margin: 12px auto; /* adds spacing and centers image */
+  flex-shrink: 0;
+  width: 260px;           /* consistent cropped width */
+  height: 260px;          /* square height for even alignment */
+  border-radius: 8px;
+  object-fit: cover;       /* crops image evenly */
+  object-position: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  margin-top: 15px;        /* adds a little vertical spacing */
 }
+
 .content-row {
   display: flex;
   align-items: center;
