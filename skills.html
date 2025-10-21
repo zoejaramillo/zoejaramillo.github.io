@@ -89,6 +89,36 @@
   margin: 12px auto 20px auto;             /* space above and below */
   border-radius: 2px;                      /* soft rounded edges */
 }
+.skills-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 340px;   /* wraps nicely on smaller screens */
+}
+
+.column h3 {
+  color: white;
+  font-size: 1.2em;
+  margin: 0 0 10px 0;
+}
+
+.column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  columns: 1;         /* keep each side as a single vertical list */
+}
+
+.column li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  color: white;
+}
 
     
   </style>
@@ -99,16 +129,85 @@
   </header>
   
    
-  <section id="skills" class="card">
-    <h2>Skills</h2>
-      <div class="card-divider"></div> 
-      <p> <strong>Languages:</strong> C, Python, Java, HTML, SystemVerilog, MATLAB </p>
-      <p><strong> Software:</strong>  LTspice, Altium Designer, Autodesk Fusion360, SolidWorks, Siemens NX, OnShape, Blender, Tinkercad, Rapid Harness, EAGLE</p>
-      <p><strong>Fabrication:</strong> 3D Printing, Laser Cutting, Machining, Milling, Lathing, Welding, Soldering, Rapid Prototyping </p>
-      <p><strong>Design:</strong> PCB Design, Electronic Design, 3D Modeling, CAD, Circuitry</p>
-      <p><strong>Systems:</strong> Embedded Linux, OpenCV , Machine Learning, Computer Science, Robotics, Autonomous Vehicles, VEX Robotics</p>
-      <p><strong>Tools:</strong> Microsoft Office (Word, Excel, PowerPoint), Adobe Suite </p>
-    </section>
+<section id="skills" class="card">
+  <h2>Skills</h2>
+  <div class="card-divider"></div>
+
+  <div class="skills-columns">
+    <div class="column">
+      <h3>Technical</h3>
+      <ul>
+        <li>C</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>HTML</li>
+        <li>SystemVerilog</li>
+        <li>MATLAB</li>
+        <li>LTspice</li>
+        <li>Altium Designer</li>
+        <li>EAGLE</li>
+        <li>Rapid Harness</li>
+        <li>SolidWorks</li>
+        <li>Siemens NX</li>
+        <li>Autodesk Fusion 360</li>
+        <li>OnShape</li>
+        <li>Blender</li>
+        <li>Tinkercad</li>
+        <li>PCB design</li>
+        <li>Electronic design</li>
+        <li>CAD / 3D modeling</li>
+        <li>Wire harness design</li>
+        <li>Harness architecture</li>
+        <li>Subsystem integration</li>
+        <li>Connector selection</li>
+        <li>Splicing &amp; crimping</li>
+        <li>Soldering</li>
+        <li>Schematic generation</li>
+        <li>Power systems</li>
+        <li>Sensor/motor interfacing</li>
+        <li>Embedded Linux</li>
+        <li>OpenCV</li>
+        <li>Machine learning</li>
+        <li>Robotics &amp; autonomous vehicles</li>
+        <li>DonkeyCar framework</li>
+        <li>Behavior cloning</li>
+        <li>Hardware/software integration</li>
+        <li>3D printing</li>
+        <li>Laser cutting</li>
+        <li>Machining / milling / lathing</li>
+        <li>Welding</li>
+        <li>Rapid prototyping</li>
+        <li>Microsoft Office</li>
+        <li>Adobe Suite</li>
+        <li>Photography: composition, lighting, editing</li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h3>Personable</h3>
+      <ul>
+        <li>Leadership</li>
+        <li>Teamwork</li>
+        <li>Mentoring</li>
+        <li>Communication</li>
+        <li>Collaboration</li>
+        <li>Client collaboration</li>
+        <li>Organization</li>
+        <li>Time management</li>
+        <li>Attention to detail</li>
+        <li>Precision</li>
+        <li>Problem-solving</li>
+        <li>Adaptability</li>
+        <li>Creativity</li>
+        <li>Innovation</li>
+        <li>Accountability</li>
+        <li>Decision-making under pressure</li>
+        <li>Efficiency in varying conditions</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
   
 </body>
 </html>
