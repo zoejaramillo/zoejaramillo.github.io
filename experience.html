@@ -194,6 +194,17 @@
   transition: transform 0.25s ease;
 }
 
+.harness-img {
+  display: block;
+  width: 100%;              /* full card width */
+  max-width: 850px;         /* keeps it contained within your card */
+  height: 300px;            /* makes it horizontal and consistent */
+  margin: 20px auto;        /* centers the image and adds breathing room */
+  border-radius: 10px;
+  object-fit: cover;        /* crops neatly instead of stretching */
+  object-position: center;  /* keeps focus centered */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
 
     
   </style>
@@ -240,7 +251,8 @@
 </div>
 
 
-<img src="images/harness.jpg" alt="Harness" class="card-img">
+<img src="images/harness.jpg" alt="Harness" class="harness-img">
+
 
 <h2>COSMOS Student Researcher – UC San Diego</h2>
 <div class="card-divider"></div>
