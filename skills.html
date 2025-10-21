@@ -119,6 +119,44 @@
   line-height: 1.5;
   color: white;
 }
+.skills-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 340px;
+}
+
+.col-title {
+  color: white;
+  font-size: 1.4em;
+  margin: 0;
+}
+
+.col-divider {
+  width: 100%;
+  height: 2px;
+  background-color: #31323D; /* same as your card-divider color */
+  border-radius: 2px;
+  margin: 10px 0 16px 0;
+}
+
+.column ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 20px;   /* slight indent */
+}
+
+.column li {
+  color: white;
+  margin-bottom: 8px;
+  line-height: 1.5;
+  text-indent: -10px;   /* aligns “– ” neatly */
+}
 
     
   </style>
@@ -130,18 +168,17 @@
   
    
 <section id="skills" class="card">
-  <h2>Skills</h2>
-  <div class="card-divider"></div>
-
   <div class="skills-columns">
     <div class="column">
-      <h3>Technical</h3>
+      <h2 class="col-title">Technical</h2>
+      <div class="col-divider"></div>
       <ul>
         <li>– C</li>
         <li>– Python</li>
         <li>– Java</li>
         <li>– HTML</li>
         <li>– SystemVerilog</li>
+        <li>– MATLAB</li>
         <li>– LTspice</li>
         <li>– Altium Designer</li>
         <li>– EAGLE</li>
@@ -150,6 +187,8 @@
         <li>– Siemens NX</li>
         <li>– Autodesk Fusion 360</li>
         <li>– OnShape</li>
+        <li>– Blender</li>
+        <li>– Tinkercad</li>
         <li>– PCB design</li>
         <li>– Electronic design</li>
         <li>– CAD / 3D modeling</li>
@@ -173,13 +212,16 @@
         <li>– Laser cutting</li>
         <li>– Machining / milling / lathing</li>
         <li>– Welding</li>
+        <li>– Rapid prototyping</li>
         <li>– Microsoft Office</li>
         <li>– Adobe Suite</li>
+        <li>– Photography: composition, lighting, editing</li>
       </ul>
     </div>
 
     <div class="column">
-      <h3>Personable</h3>
+      <h2 class="col-title">Personable</h2>
+      <div class="col-divider"></div>
       <ul>
         <li>– Leadership</li>
         <li>– Teamwork</li>
@@ -202,6 +244,7 @@
     </div>
   </div>
 </section>
+
 
 
   
