@@ -225,7 +225,13 @@
   background: rgba(255, 255, 255, 0.2);
   transform: scale(1.03);
 }
+.section {
+  margin-bottom: 36px;   /* space between sections */
+}
 
+.section:last-child {
+  margin-bottom: 0;      /* no extra space after the last one */
+}
   </style>
 </head>
 <body>
@@ -235,7 +241,7 @@
   
  <section class="card">
 
-
+  <div class="section">
 <h2>Cal Poly Mars Mini Space Rover</h2>
 <div class="card-divider"></div>
 <div class="image-row">
@@ -251,10 +257,12 @@
     <img src="images/image1.jpeg" alt="Rover" class="card-img2">
   </a>
 </div>
+    </div>
 
 
 
    <!-- FSAE Section -->
+     <div class="section">
 <h2>Cal Poly Racing FSAE</h2>
 <div class="card-divider"></div>
 <div class="image-row">
@@ -267,11 +275,12 @@
  </div>
   <img src="/images/carphoto.jpg" alt="Cal Poly Racing" class="card-img2">
 </div>
+       </div>
 
 
 <img src="images/harness.jpg" alt="Harness" class="harness-img">
 
-
+  <div class="section">
 <h2>COSMOS Student Researcher – UC San Diego</h2>
 <div class="card-divider"></div>
 <div class="image-row">
@@ -283,6 +292,7 @@
   </div>
   <img src="images/car1.png" alt="COSMOS RC Car" class="card-img2">
 </div>
+    </div>
 
 </section>
 
