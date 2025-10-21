@@ -116,12 +116,7 @@
   max-width: 650px;
   text-align: left;
 }
-.image-row {
-  display: flex;            /* places items in a row */
-  justify-content: center;  /* centers the images */
-  gap: 20px;                /* space between images */
-  margin-top: 12px;
-}
+
   
 .card-img2 {
   width: 500px;     /* control image size */
@@ -165,8 +160,23 @@
   border-radius: 2px;
 }
 
+.image-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 10px;
+}
+
 .rover-img {
-  margin-top: 30px; /* lowers the image slightly */
+  flex-shrink: 0;
+  width: 250px;
+  height: 260px;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  margin-top: 15px; /* lowers the image slightly */
 }
 
     
@@ -179,17 +189,17 @@
   
  <section class="card">
 
-   <div class="content-row rover-row">
+
+   <h2>Cal Poly Mars Mini Space Rover</h2>
+<div class="card-divider"></div>
+<div class="image-row">
   <div class="text-side">
-    <h2>Cal Poly Mars Mini Space Rover</h2>
-    <div class="card-divider full-width"></div>
     <p>Led the wire harnessing team for the Cal Poly Mini Rover, a fully student-designed system being developed for Mars deployment by 2030. Designed and implemented the 2025 harness architecture supporting sensors, motors, and power systems.</p>
     <p>Collaborated closely with sensor and motor subsystem teams to develop durable interconnects capable of withstanding extreme temperature changes and dust exposure on Mars.</p>
     <p>Oversaw connector selection, soldering, and harness assembly while mentoring team members on routing, protection, and subsystem integration. Applied strong organization, precision, and teamwork skills throughout the project.</p>
   </div>
-  <img src="images/rover.jpg" alt="Rover" class="side-img rover-img">
+  <img src="images/rover.jpg" alt="Rover" class="card-img2 rover-img">
 </div>
-
 
 
 
