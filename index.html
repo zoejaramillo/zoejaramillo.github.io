@@ -328,6 +328,130 @@
   margin-bottom: 0;
 }
 
+/* ===== Experience section ===== */
+
+.experience-header {
+  width: 100%;
+  padding: 20px 20px 0;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-header h1 {
+  margin: 0;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 2.6em;
+  color: white;
+}
+
+.exp-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  padding: 20px 24px;
+  color: white;
+  text-align: left;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: background 0.25s ease;
+  margin: 20px auto 40px;
+  max-width: 900px;
+}
+
+.exp-card h2 {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  margin-top: 0;
+}
+
+.exp-card p,
+.exp-card li {
+  font-family: 'Inter', sans-serif;
+  color: white;
+  line-height: 1.6;
+}
+
+.exp-section {
+  margin-bottom: 36px;
+}
+
+.exp-section:last-child {
+  margin-bottom: 0;
+}
+
+.exp-skills-label {
+  color: #4a9eff;
+  font-weight: 700;
+}
+
+.exp-image-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.exp-text-side {
+  flex: 1 1 550px;
+  color: white;
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.exp-img2 {
+  flex-shrink: 0;
+  width: 250px;
+  height: 280px;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.exp-harness-img {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: 300px;
+  margin: 20px auto 0;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.exp-rover-button {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 14px;
+  font-size: 0.9em;
+  font-family: 'Inter', sans-serif;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  transition: all 0.25s ease;
+}
+
+.exp-rover-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.03);
+}
+
 </style>
 </head>
 <body>
@@ -338,7 +462,7 @@
     <nav>
       <a href="#about">About Me</a>
       <a href="/skills.html">Skills</a>
-      <a href="/experience.html">Experience</a>
+      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="/activities.html">Activities</a>
       <a href="#contact">Contact</a>
@@ -397,6 +521,62 @@
         <li>Collaborated in a 3-person team to debug and implement modules, including state machines and one-shot timing extensions for buzzer and LED signaling, verified through behavioral simulations and hardware testing.</li>
       </ul>
       <img src="images/sim.png" alt="Schematic" class="card-img3">
+    </div>
+
+  </div>
+</section>
+
+<section id="experience">
+  <header class="experience-header">
+    <h1>Experience</h1>
+  </header>
+
+  <div class="exp-card">
+
+    <div class="exp-section">
+      <h2>Cal Poly Mars Mini Space Rover</h2>
+      <div class="card-divider"></div>
+      <div class="exp-image-row">
+        <div class="exp-text-side">
+          <p>Led the wire harnessing team for the Cal Poly Mini Rover, a fully student-designed system being developed for Mars deployment by 2030. Designed and implemented the 2025 harness architecture supporting sensors, motors, and power systems.</p>
+          <p>Collaborated closely with sensor and motor subsystem teams to develop durable interconnects capable of withstanding extreme temperature changes and dust exposure on Mars.</p>
+          <p>Oversaw connector selection, soldering, and harness assembly while mentoring team members on routing, protection, and subsystem integration. Applied strong organization, precision, and teamwork skills throughout the project.</p>
+          <p><b class="exp-skills-label">Technical Skills:</b> Harness architecture design, soldering, connector selection, subsystem integration, sensor/motor interfacing, power systems design</p>
+          <p><b class="exp-skills-label">Personable Skills:</b> Leadership, organization, precision, teamwork, mentoring</p>
+          <a href="https://poly1rover.com/" target="_blank" class="exp-rover-button">Visit Poly Rover Website</a>
+        </div>
+        <img src="images/image1.jpeg" alt="Rover" class="exp-img2">
+      </div>
+    </div>
+
+    <div class="exp-section">
+      <h2>Cal Poly Racing FSAE</h2>
+      <div class="card-divider"></div>
+      <div class="exp-image-row">
+        <div class="exp-text-side">
+          <p>Contributed to the design, CAD modeling, and assembly of the front wire harness for Cal Poly's Formula SAE vehicle using Siemens NX and Rapid Harness. Worked to enhance the layout of electrical components and refine system connectivity, improving reliability and ease of maintenance.</p>
+          <p>Measured wire paths through the chassis using string to match actual lengths in Siemens NX, ensuring accurate routing.</p>
+          <p>Gained hands-on experience splicing wires and selecting and crimping connectors to create clean, reliable connections. Used Rapid Harness to generate wiring schematics and documentation, ensuring the final harness matched the digital design.</p>
+          <p><b class="exp-skills-label">Technical Skills:</b> CAD modeling, wire harness design, Siemens NX, Rapid Harness, connector selection, splicing and crimping, schematic generation</p>
+          <p><b class="exp-skills-label">Personable Skills:</b> Communication, collaboration, attention to detail, problem-solving</p>
+        </div>
+        <img src="/images/carphoto.jpg" alt="Cal Poly Racing" class="exp-img2">
+      </div>
+      <img src="images/harness.jpg" alt="Harness" class="exp-harness-img">
+    </div>
+
+    <div class="exp-section">
+      <h2>COSMOS Student Researcher – UC San Diego</h2>
+      <div class="card-divider"></div>
+      <div class="exp-image-row">
+        <div class="exp-text-side">
+          <p>Conducted research in autonomous systems at UC San Diego through the COSMOS program, guided by Professor Jack Silberman.</p>
+          <p>Collaborated in a team of three to design and implement an autonomous RC vehicle using the DonkeyCar AI Framework, human behavior cloning, OpenCV, and Embedded Linux. Engineered and fabricated a custom base plate and LIDAR mount with OnShape, 3D modeling, and laser cutting, successfully integrating hardware and software to achieve a fully autonomous lane-following vehicle.</p>
+          <p><b class="exp-skills-label">Technical Skills:</b> Autonomous systems, DonkeyCar AI Framework, OpenCV, Embedded Linux, behavior cloning, OnShape, 3D modeling, laser cutting, hardware/software integration</p>
+          <p><b class="exp-skills-label">Personable Skills:</b> Collaboration, problem-solving, adaptability, communication, innovation</p>
+        </div>
+        <img src="images/car1.png" alt="COSMOS RC Car" class="exp-img2">
+      </div>
     </div>
 
   </div>
