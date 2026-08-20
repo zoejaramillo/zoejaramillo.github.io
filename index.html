@@ -203,8 +203,11 @@
 
 .archive-header {
   width: 100%;
+  height: auto;
+  min-height: 0;
   padding: 60px 20px 10px;
   text-align: center;
+  display: block;
 }
 
 .archive-header h1 {
@@ -324,13 +327,11 @@
 
 .experience-header {
   width: 100%;
+  height: auto;
+  min-height: 0;
   padding: 20px 20px 0;
   text-align: center;
-  color: white;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
 }
 
 .experience-header h1 {
@@ -344,7 +345,6 @@
 }
 
 .exp-card {
-  /* no background box — plain, sits directly on the page background */
   padding: 20px 24px;
   color: white;
   text-align: left;
@@ -432,6 +432,27 @@
   border: 1px solid #333333;
   border-radius: 4px;
   padding: 5px 12px;
+}
+
+/* ===== Projects section header override (also a <header>, same fix) ===== */
+
+.projects-header {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  padding: 20px 20px 0;
+  text-align: center;
+  display: block;
+}
+
+.projects-header h1 {
+  margin: 0;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 2.6em;
+  color: white;
 }
 
 </style>
@@ -634,7 +655,7 @@
             <span>Adaptability</span>
           </div>
         </div>
-        <img src="images/photography.jpg" alt="Freelance Photography" class="exp-img">
+        <img src="images/nismo2.jpg" alt="Freelance Photography" class="exp-img">
       </div>
     </div>
 
