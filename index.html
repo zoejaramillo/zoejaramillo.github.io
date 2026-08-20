@@ -211,14 +211,19 @@
 }
 
 .contact-icons a {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
 }
 
 .contact-icon-img {
-  width: 48px;
-  height: 48px;
-  object-fit: cover;
-  border-radius: 0;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   display: block;
   transition: opacity 0.2s ease;
 }
@@ -441,21 +446,22 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 30px;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
 .exp-text-col {
-  flex: 1 1 500px;
+  flex: 1 1 420px;
 }
 
 .exp-img {
   flex-shrink: 0;
-  width: 220px;
-  height: 220px;
+  width: 340px;
+  height: 340px;
   object-fit: cover;
   object-position: center;
-  border-radius: 8px;
+  border-radius: 0;
+  margin-top: 62px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -542,20 +548,6 @@
       </p>
     </div>
     <img src="images/zoejaramillo1.jpg" alt="Zoe Jaramillo" class="about-img">
-  </div>
-</section>
-
-<hr class="section-divider">
-
-<section id="contact">
-  <h2>Contact</h2>
-  <div class="contact-icons">
-    <a href="mailto:zoejaramillo2024@gmail.com" aria-label="Email Zoe">
-      <img src="images/gmail2.jpg" alt="Email" class="contact-icon-img gmail-icon">
-    </a>
-    <a href="https://www.linkedin.com/in/zoe-jaramillo-277915242/" aria-label="Zoe's LinkedIn" target="_blank">
-      <img src="images/linkedin.png" alt="LinkedIn" class="contact-icon-img">
-    </a>
   </div>
 </section>
 
@@ -831,6 +823,20 @@
       </div>
     </div>
 
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact-icons">
+    <a href="mailto:zoejaramillo2024@gmail.com" aria-label="Email Zoe">
+      <img src="images/gmail2.jpg" alt="Email" class="contact-icon-img gmail-icon">
+    </a>
+    <a href="https://www.linkedin.com/in/zoe-jaramillo-277915242/" aria-label="Zoe's LinkedIn" target="_blank">
+      <img src="images/linkedin.png" alt="LinkedIn" class="contact-icon-img">
+    </a>
   </div>
 </section>
 
