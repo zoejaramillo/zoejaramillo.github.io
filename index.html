@@ -202,11 +202,29 @@
   border: none;
 }
 
-.contact-info p {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.1em;
-  line-height: 1.8;
-  margin: 6px 0;
+.contact-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.contact-icons a {
+  display: block;
+}
+
+.contact-icon-img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+.contact-icons a:hover .contact-icon-img {
+  opacity: 0.75;
 }
 
 #contact a:hover {
@@ -527,10 +545,13 @@
 
 <section id="contact">
   <h2>Contact</h2>
-  <div class="contact-info">
-    <p>Phone Number: <a href="tel:9492310966">949-231-0966</a></p>
-    <p>Email: <a href="mailto:zoejaramillo2024@gmail.com">zoejaramillo2024@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/zoe-jaramillo-277915242/">Zoe Jaramillo</a></p>
+  <div class="contact-icons">
+    <a href="mailto:zoejaramillo2024@gmail.com" aria-label="Email Zoe">
+      <img src="images/gmail.jpg" alt="Email" class="contact-icon-img">
+    </a>
+    <a href="https://www.linkedin.com/in/zoe-jaramillo-277915242/" aria-label="Zoe's LinkedIn" target="_blank">
+      <img src="images/linkedin.png" alt="LinkedIn" class="contact-icon-img">
+    </a>
   </div>
 </section>
 
