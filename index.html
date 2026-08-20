@@ -15,12 +15,13 @@
       font: 16px/1.6 'Inter', sans-serif;
       margin: 0;
       padding: 0;
+      padding-top: 82px;
       background-color: #000000;
       color: white;
     }
     header {
       width: 100%;
-      height: 100vh;
+      height: calc(100vh - 82px);
       background-color: #000000;
       display: flex;
       flex-direction: column;
@@ -42,35 +43,64 @@
 
     header p {
       margin: 16px 0 8px 0;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Archivo Black', sans-serif;
+      font-weight: 400;
       font-size: 1em;
-      font-weight: 500;
       letter-spacing: 3px;
       text-transform: uppercase;
       line-height: 1.2;
-      color: #8b0000;
+      color: #d4af37;
     }
 
-    nav {
-      margin-top: 10px;
+    html {
+      scroll-padding-top: 90px;
     }
 
-    nav a {
-      margin: 0 12px;
+    .site-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #000000;
+      border-bottom: 1px solid #333333;
+      z-index: 1000;
+      padding: 22px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+    }
+
+    .site-nav .home-link {
+      font-family: 'Archivo Black', sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 1.2em;
+      color: white;
+      text-decoration: none;
+    }
+
+    .site-nav .nav-links {
+      display: flex;
+      gap: 40px;
+    }
+
+    .site-nav .nav-links a {
+      margin: 0;
       color: #888888;
       font-family: 'Inter', sans-serif;
       font-weight: 600;
       letter-spacing: 2px;
       text-transform: uppercase;
       text-decoration: none;
-      font-size: 1em;
-      padding: 6px 12px;
-      border: 2px solid transparent;
-      border-radius: 4px;
+      font-size: 0.9em;
+      padding: 0;
+      border: none;
       transition: color 0.2s ease;
-  }
-  
-    nav a:hover {
+    }
+
+    .site-nav .nav-links a:hover {
       color: #4a9eff;
     }
 
@@ -459,16 +489,20 @@
 </head>
 <body>
   
+<nav class="site-nav">
+    <a href="https://zoejaramillo.com" class="home-link">Home</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="/activities.html">Activities</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
   <header>
     <h1>Zoe Jaramillo</h1>
     <p>Cal Poly SLO Electrical Engineering Student</p>
-    <nav>
-      <a href="#about">About Me</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="/activities.html">Activities</a>
-      <a href="#contact">Contact</a>
-    </nav>
   </header>
 
 
