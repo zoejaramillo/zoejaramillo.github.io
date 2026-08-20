@@ -385,9 +385,53 @@
   margin-bottom: 0;
 }
 
+.exp-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.exp-text-col {
+  flex: 1 1 500px;
+}
+
+.exp-img {
+  flex-shrink: 0;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
 .exp-skills-label {
+  font-family: 'Space Mono', monospace;
   color: #4a9eff;
   font-weight: 700;
+  font-size: 0.85em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.exp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 20px 0;
+}
+
+.exp-tags span {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8em;
+  color: #cccccc;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  padding: 5px 12px;
 }
 
 </style>
@@ -535,45 +579,116 @@
   <div class="exp-card">
 
     <div class="exp-section">
-      <h2>Design & Applications Engineering Intern</h2>
-      <p class="exp-role-meta">Amphenol Borisch Technologies — Mesa, AZ // June – Aug. 2026</p>
-      <div class="card-divider"></div>
-      <p>Assembled and electrically tested 14 aerospace prototype wire harnesses by performing wire stripping, crimping, connector pinning, continuity testing, pull-force testing, and contact retention verification.</p>
-      <p>Performed electrical validation using oscilloscopes, function generators, and shorted-stub test fixtures while developing standardized electrical test procedures.</p>
-      <p>Designed two custom fixtures in SolidWorks and manufactured them via resin 3D printing to improve wire alignment during backshell assembly and silicone potting.</p>
-      <p>Authored four SolidWorks harness and kit drawings that standardized heater cartridge assembly, molding, and potting processes, driving consistent manufacturing work instructions across five production sites.</p>
-      <p><b class="exp-skills-label">Technical Skills:</b> Wire harness assembly, crimping, connector pinning, continuity and pull-force testing, contact retention verification, oscilloscopes, function generators, SolidWorks fixture design, resin 3D printing</p>
-      <p><b class="exp-skills-label">Personable Skills:</b> Attention to detail, documentation, cross-site collaboration, communication</p>
+      <div class="exp-row">
+        <div class="exp-text-col">
+          <h2>Design & Applications Engineering Intern</h2>
+          <p class="exp-role-meta">Amphenol Borisch Technologies — Mesa, AZ // June – Aug. 2026</p>
+          <div class="card-divider"></div>
+          <p>Assembled and electrically tested 14 aerospace prototype wire harnesses by performing wire stripping, crimping, connector pinning, continuity testing, pull-force testing, and contact retention verification.</p>
+          <p>Performed electrical validation using oscilloscopes, function generators, and shorted-stub test fixtures while developing standardized electrical test procedures.</p>
+          <p>Designed two custom fixtures in SolidWorks and manufactured them via resin 3D printing to improve wire alignment during backshell assembly and silicone potting.</p>
+          <p>Authored four SolidWorks harness and kit drawings that standardized heater cartridge assembly, molding, and potting processes, driving consistent manufacturing work instructions across five production sites.</p>
+          <span class="exp-skills-label">Technical Skills</span>
+          <div class="exp-tags">
+            <span>Wire Harness Assembly</span>
+            <span>Crimping</span>
+            <span>Connector Pinning</span>
+            <span>Continuity Testing</span>
+            <span>Oscilloscopes</span>
+            <span>SolidWorks</span>
+            <span>Resin 3D Printing</span>
+          </div>
+          <span class="exp-skills-label">Personable Skills</span>
+          <div class="exp-tags">
+            <span>Attention to Detail</span>
+            <span>Documentation</span>
+            <span>Cross-Site Collaboration</span>
+            <span>Communication</span>
+          </div>
+        </div>
+        <img src="images/amphenol.jpg" alt="Amphenol Borisch Technologies" class="exp-img">
+      </div>
     </div>
 
     <div class="exp-section">
-      <h2>Freelance Photographer</h2>
-      <p class="exp-role-meta">Self-Employed — Irvine, CA</p>
-      <div class="card-divider"></div>
-      <p>Provide paid and freelance photography services with a focus on sports and automotive subjects, alongside client-based work including graduations and environmental portraits.</p>
-      <p>Manage every stage of a shoot from client communication and location scouting to shooting and post-production editing, adapting style and approach to each client's needs.</p>
-      <p><b class="exp-skills-label">Technical Skills:</b> Photography, photo editing, lighting, composition, post-production workflow</p>
-      <p><b class="exp-skills-label">Personable Skills:</b> Creativity, attention to detail, client communication, adaptability</p>
+      <div class="exp-row">
+        <div class="exp-text-col">
+          <h2>Freelance Photographer</h2>
+          <p class="exp-role-meta">Self-Employed — Irvine, CA</p>
+          <div class="card-divider"></div>
+          <p>Provide paid and freelance photography services with a focus on sports and automotive subjects, alongside client-based work including graduations and environmental portraits.</p>
+          <p>Manage every stage of a shoot from client communication and location scouting to shooting and post-production editing, adapting style and approach to each client's needs.</p>
+          <span class="exp-skills-label">Technical Skills</span>
+          <div class="exp-tags">
+            <span>Photography</span>
+            <span>Photo Editing</span>
+            <span>Lighting</span>
+            <span>Composition</span>
+            <span>Post-Production Workflow</span>
+          </div>
+          <span class="exp-skills-label">Personable Skills</span>
+          <div class="exp-tags">
+            <span>Creativity</span>
+            <span>Attention to Detail</span>
+            <span>Client Communication</span>
+            <span>Adaptability</span>
+          </div>
+        </div>
+        <img src="images/photography.jpg" alt="Freelance Photography" class="exp-img">
+      </div>
     </div>
 
     <div class="exp-section">
-      <h2>Team Member</h2>
-      <p class="exp-role-meta">Chick-fil-A — Irvine, CA</p>
-      <div class="card-divider"></div>
-      <p>Delivered fast, friendly customer service in a high-volume, fast-paced restaurant environment, handling orders, food preparation, and front-of-house operations.</p>
-      <p>Worked closely with a large team under time pressure, staying organized and adaptable during peak rush periods while maintaining accuracy and a positive customer experience.</p>
-      <p><b class="exp-skills-label">Technical Skills:</b> Order accuracy, cash handling, food safety and preparation</p>
-      <p><b class="exp-skills-label">Personable Skills:</b> Teamwork, communication, time management, customer service</p>
+      <div class="exp-row">
+        <div class="exp-text-col">
+          <h2>Team Member</h2>
+          <p class="exp-role-meta">Chick-fil-A — Irvine, CA</p>
+          <div class="card-divider"></div>
+          <p>Delivered fast, friendly customer service in a high-volume, fast-paced restaurant environment, handling orders, food preparation, and front-of-house operations.</p>
+          <p>Worked closely with a large team under time pressure, staying organized and adaptable during peak rush periods while maintaining accuracy and a positive customer experience.</p>
+          <span class="exp-skills-label">Technical Skills</span>
+          <div class="exp-tags">
+            <span>Order Accuracy</span>
+            <span>Cash Handling</span>
+            <span>Food Safety & Prep</span>
+          </div>
+          <span class="exp-skills-label">Personable Skills</span>
+          <div class="exp-tags">
+            <span>Teamwork</span>
+            <span>Communication</span>
+            <span>Time Management</span>
+            <span>Customer Service</span>
+          </div>
+        </div>
+        <img src="images/chickfila.jpg" alt="Chick-fil-A Team Member" class="exp-img">
+      </div>
     </div>
 
     <div class="exp-section">
-      <h2>Police Explorer</h2>
-      <p class="exp-role-meta">Irvine Police Department — Irvine, CA // 3 Years</p>
-      <div class="card-divider"></div>
-      <p>Volunteered for three years with the Irvine Police Department's Explorer program, assisting officers with community events, department operations, and public safety initiatives.</p>
-      <p>Developed the ability to remain adaptable and quick-thinking in fast-paced, unpredictable situations, while building strong discipline, communication, and teamwork skills within a structured, service-oriented environment.</p>
-      <p><b class="exp-skills-label">Technical Skills:</b> Public safety procedures, event operations, structured protocol</p>
-      <p><b class="exp-skills-label">Personable Skills:</b> Adaptability, quick decision-making, discipline, teamwork, communication</p>
+      <div class="exp-row">
+        <div class="exp-text-col">
+          <h2>Police Explorer</h2>
+          <p class="exp-role-meta">Irvine Police Department — Irvine, CA // 3 Years</p>
+          <div class="card-divider"></div>
+          <p>Volunteered for three years with the Irvine Police Department's Explorer program, assisting officers with community events, department operations, and public safety initiatives.</p>
+          <p>Developed the ability to remain adaptable and quick-thinking in fast-paced, unpredictable situations, while building strong discipline, communication, and teamwork skills within a structured, service-oriented environment.</p>
+          <span class="exp-skills-label">Technical Skills</span>
+          <div class="exp-tags">
+            <span>Public Safety Procedures</span>
+            <span>Event Operations</span>
+            <span>Structured Protocol</span>
+          </div>
+          <span class="exp-skills-label">Personable Skills</span>
+          <div class="exp-tags">
+            <span>Adaptability</span>
+            <span>Quick Decision-Making</span>
+            <span>Discipline</span>
+            <span>Teamwork</span>
+            <span>Communication</span>
+          </div>
+        </div>
+        <img src="images/policeexplorer.jpg" alt="Irvine Police Department Explorer" class="exp-img">
+      </div>
     </div>
 
   </div>
