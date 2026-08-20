@@ -36,9 +36,9 @@
       font-family: 'Archivo Black', sans-serif;
       font-weight: 400;
       text-transform: uppercase;
-      font-size: 6em;
+      font-size: 9em;
       letter-spacing: 1px;
-      line-height: 1;
+      line-height: 0.95;
     }
 
     header p {
@@ -50,6 +50,16 @@
       text-transform: uppercase;
       line-height: 1.2;
       color: #d4af37;
+    }
+
+    header .location-line {
+      margin: 4px 0 0 0;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 0.9em;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #888888;
     }
 
     html {
@@ -214,8 +224,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 56px;
-  height: 56px;
+}
+
+.contact-icons a.gmail-link {
+  width: 44px;
+  height: 44px;
+}
+
+.contact-icons a.linkedin-link-box {
+  width: 68px;
+  height: 68px;
 }
 
 .contact-icon-img {
@@ -529,8 +547,9 @@
   </nav>
 
   <header>
-    <h1>Zoe Jaramillo</h1>
+    <h1>Zoe<br>Jaramillo</h1>
     <p>Cal Poly SLO Electrical Engineering Student</p>
+    <p class="location-line">Irvine, CA</p>
   </header>
 
 
@@ -557,19 +576,18 @@
 
   <header class="archive-header">
     <h1>Project Archive</h1>
-    <p>SYSTEM INDEX // TOTAL UNITS: 8</p>
   </header>
 
   <div class="archive-grid">
 
     <a href="marsrover.html" class="archive-item">
-      <img src="images/image1.jpeg" alt="Mars Rover" class="archive-img">
+      <img src="images/image1.jpeg" alt="Mars Mini Rover" class="archive-img">
       <div class="archive-info">
         <div class="archive-meta">
           <span class="archive-ref">REF_ZJ-01</span>
           <span class="archive-category">Aerospace</span>
         </div>
-        <h2 class="archive-title">Mars Rover</h2>
+        <h2 class="archive-title">2026 Mars Rover</h2>
         <p class="archive-desc">Led the wire harnessing team for a fully student-designed rover, engineering the 2025 harness architecture for sensors, motors, and power systems.</p>
         <div class="archive-tags">
           <span>Harness Design</span>
@@ -631,13 +649,13 @@
     </a>
 
     <a href="wireharness.html" class="archive-item">
-      <img src="/images/carphoto.jpg" alt="FSAE Front Wire Harness" class="archive-img">
+      <img src="/images/carphoto.jpg" alt="2025 FSAE Front Wire Harness" class="archive-img">
       <div class="archive-info">
         <div class="archive-meta">
           <span class="archive-ref">REF_ZJ-05</span>
           <span class="archive-category">Motorsport</span>
         </div>
-        <h2 class="archive-title">FSAE Front Wire Harness</h2>
+        <h2 class="archive-title">2025 FSAE Front Wire Harness</h2>
         <p class="archive-desc">Designed and assembled the front wire harness for Cal Poly Racing's Formula SAE vehicle in Siemens NX and Rapid Harness, refining routing and connector integration for reliability.</p>
         <div class="archive-tags">
           <span>Siemens NX</span>
@@ -831,10 +849,10 @@
 <section id="contact">
   <h2>Contact</h2>
   <div class="contact-icons">
-    <a href="mailto:zoejaramillo2024@gmail.com" aria-label="Email Zoe">
+    <a href="mailto:zoejaramillo2024@gmail.com" aria-label="Email Zoe" class="gmail-link">
       <img src="images/gmail2.jpg" alt="Email" class="contact-icon-img gmail-icon">
     </a>
-    <a href="https://www.linkedin.com/in/zoe-jaramillo-277915242/" aria-label="Zoe's LinkedIn" target="_blank">
+    <a href="https://www.linkedin.com/in/zoe-jaramillo-277915242/" aria-label="Zoe's LinkedIn" target="_blank" class="linkedin-link-box">
       <img src="images/linkedin.png" alt="LinkedIn" class="contact-icon-img">
     </a>
   </div>
