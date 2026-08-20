@@ -111,7 +111,7 @@
   max-width: 900px;
   margin: 60px auto;
   padding: 0 20px;
-  text-align: center;
+  text-align: left;
 }
 
 #about h2 {
@@ -121,9 +121,28 @@
   letter-spacing: 1px;
   font-size: 2.6em;
   color: white;
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
   border: none;
+}
+
+.about-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-text-col {
+  flex: 1 1 500px;
+}
+
+.about-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
     
   #about p {
@@ -131,6 +150,7 @@
     font-size: 1.1em;
     line-height: 1.6;
     color: #d0d0d0;
+    margin: 0;
   }
 
  #contact {
@@ -152,41 +172,10 @@
   border: none;
 }
 
-.contact-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-}
-
-.contact-img {
-  width: 200px;
-  height: 210px;
-  object-fit: cover;
-  border-radius: 4px;
-  flex-shrink: 0;
-}
-
-  .contact-card {
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 4px;
-  padding: 20px 24px;
-  color: white;
-  text-align: left;
-  flex: 1;
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  transition: background 0.25s ease;
-  height: 170px;  
-  display: flex; 
-  flex-direction: column;
-  justify-content: center;   
-}
-    
-.contact-card p {
+.contact-info p {
   font-family: 'Inter', sans-serif;
   font-size: 1.1em;
-  line-height: 1.6;
+  line-height: 1.8;
   margin: 6px 0;
 }
 
@@ -487,24 +476,27 @@
 
 </section>
 
+<hr class="section-divider">
+
 <section id="about">
   <h2>About Me</h2>
-  <p>I am an electrical engineering student at Cal Poly SLO, interested in power electronics, aerospace, and hardware systems such as wiring, PCB design, and space technologies. I bring a strong blend of technical problem-solving and service-oriented experience developed through three years of volunteer work with the Irvine Police Department, where I learned to remain adaptable and quick-thinking in fast-paced, unpredictable situations. In addition, I pursue photography with a focus on sports and automotive subjects, while also taking on paid and freelance projects such as graduations and environmental portraits. This work has deepened my creativity, attention to detail, and adaptability to various client needs.
-  </p>
+  <div class="about-row">
+    <div class="about-text-col">
+      <p>I am an electrical engineering student at Cal Poly SLO, interested in power electronics, aerospace, and hardware systems such as wiring, PCB design, and space technologies. I bring a strong blend of technical problem-solving and service-oriented experience developed through three years of volunteer work with the Irvine Police Department, where I learned to remain adaptable and quick-thinking in fast-paced, unpredictable situations. In addition, I pursue photography with a focus on sports and automotive subjects, while also taking on paid and freelance projects such as graduations and environmental portraits. This work has deepened my creativity, attention to detail, and adaptability to various client needs.
+      </p>
+    </div>
+    <img src="images/zoejaramillo1.jpg" alt="Zoe Jaramillo" class="about-img">
+  </div>
 </section>
 
 <hr class="section-divider">
 
 <section id="contact">
   <h2>Contact</h2>
-  <div class="contact-wrapper">
-    <img src="images/zoejaramillo1.jpg" alt="Zoe Jaramillo" class="contact-img">
-
-    <div class="contact-card">
-      <p>Phone Number: <a href="tel:9492310966">949-231-0966</a></p>
-      <p>Email: <a href="mailto:zoejaramillo2024@gmail.com">zoejaramillo2024@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/zoe-jaramillo-277915242/">Zoe Jaramillo</a></p>
-    </div>
+  <div class="contact-info">
+    <p>Phone Number: <a href="tel:9492310966">949-231-0966</a></p>
+    <p>Email: <a href="mailto:zoejaramillo2024@gmail.com">zoejaramillo2024@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/zoe-jaramillo-277915242/">Zoe Jaramillo</a></p>
   </div>
 </section>
 
