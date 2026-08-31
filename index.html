@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Acura Integra Project Car — Zoe Jaramillo</title>
+  <title>Zoe Jaramillo</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,6 +18,48 @@
       padding-top: 82px;
       background-color: #000000;
       color: white;
+    }
+    header {
+      width: 100%;
+      height: calc(100vh - 82px);
+      background-color: #000000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+     header h1 {
+      margin: 0;
+      font-family: 'Archivo Black', sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 9em;
+      letter-spacing: 1px;
+      line-height: 0.95;
+    }
+
+    header p {
+      margin: 16px 0 8px 0;
+      font-family: 'Archivo Black', sans-serif;
+      font-weight: 400;
+      font-size: 1em;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      line-height: 1.2;
+      color: #d4af37;
+    }
+
+    header .location-line {
+      margin: 4px 0 0 0;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 0.9em;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #888888;
     }
 
     html {
@@ -77,151 +119,784 @@
       color: #4a9eff;
     }
 
-    /* ===== Title / Hero section ===== */
-
-    .title-hero {
-      width: 100%;
-      height: calc(100vh - 82px);
-      background-color: #000000;
-      background-image: url('images/photointegra.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      position: relative;
+    .card {
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 40px auto;
+      max-width: 900px;
     }
+      .card h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #333333;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+  }
 
-    .title-hero h1 {
-      margin: 0;
-      font-family: 'Archivo Black', sans-serif;
-      font-weight: 400;
-      text-transform: uppercase;
-      color: white;
-      font-size: 4.5em;
-      letter-spacing: 1px;
-      line-height: 1.05;
-      max-width: 1100px;
-      padding: 0 20px;
-      position: relative;
-      z-index: 1;
-    }
+    .card a { 
+      text-decoration: none;
+      color: inherit;
+      font-weight: normal; }
+    
+    .linkedin-link { 
+      text-decoration: none; 
+      color: #0a66c2;
+      font-weight: bold; }
 
-    /* ===== Story section (image left, text right) ===== */
+      .card p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1em;
+    color: white;
+    line-height: 1.6;
+}
+  #about {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: left;
+}
 
-    .story-section {
-      max-width: 1100px;
-      margin: 80px auto;
-      padding: 0 20px;
-    }
+#about h2 {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 2.6em;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  border: none;
+}
 
-    .story-row {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
+.about-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
 
-    .story-row.reverse {
-      flex-direction: row-reverse;
-    }
+.about-text-col {
+  flex: 1 1 500px;
+}
 
-    .story-img {
-      width: 480px;
-      max-width: 100%;
-      height: 480px;
-      object-fit: cover;
-      flex-shrink: 0;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    }
+.about-img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 0;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+    
+  #about p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1.15em;
+    line-height: 1.75;
+    letter-spacing: 0.2px;
+    color: #d0d0d0;
+    margin: 0;
+  }
 
-    .story-text {
-      flex: 1 1 380px;
-    }
+ #contact {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
 
-    .story-text p {
-      font-family: 'Inter', sans-serif;
-      font-weight: 300;
-      font-size: 1.15em;
-      line-height: 1.75;
-      letter-spacing: 0.2px;
-      color: #d0d0d0;
-      margin: 0;
-    }
+#contact h2 {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 3.4em;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  border: none;
+}
 
-    .story-date {
-      font-family: 'Archivo Black', sans-serif;
-      font-weight: 400;
-      color: #4a9eff;
-      font-size: 1.1em;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      text-align: left;
-      margin: 0 0 12px 0;
-    }
+.contact-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 20px;
+}
 
-    .story-date-line {
-      width: 99%;
-      height: 1px;
-      background-color: #4a9eff;
-      margin: 0 auto 40px;
-      border: none;
-    }
+.contact-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+}
 
-  </style>
+.contact-icon-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+.contact-icons a:hover .contact-icon-img {
+  opacity: 0.75;
+}
+
+.gmail-icon {
+  border-radius: 10px;
+}
+
+#contact a:hover {
+    color: #0a66c2;  
+}
+
+ #contact a {
+  color: #aeb3cc;
+  text-decoration: none; 
+}
+
+.section-divider {
+  max-width: 1100px;
+  margin: 0 auto;
+  border: none;
+  border-top: 1px solid #333333;
+}
+
+/* ===== Project Archive grid (new) ===== */
+
+.archive-header {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  padding: 60px 20px 10px;
+  text-align: center;
+  display: block;
+}
+
+.archive-header h1 {
+  margin: 0;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 3.4em;
+  color: white;
+}
+
+.archive-header p {
+  font-family: 'Space Mono', monospace;
+  color: #888888;
+  letter-spacing: 2px;
+  font-size: 0.9em;
+  margin-top: 8px;
+}
+
+.archive-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background-color: #222222;
+  max-width: 1350px;
+  width: 94%;
+  margin: 30px auto 60px;
+  border: 1px solid #222222;
+}
+
+.archive-item {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.25s ease;
+}
+
+.archive-item:hover {
+  background-color: #111111;
+}
+
+.archive-item:hover .archive-img {
+  filter: brightness(0.75);
+}
+
+.archive-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.25s ease;
+}
+
+.archive-info {
+  padding: 24px 24px 28px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.archive-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+}
+
+.archive-ref {
+  color: #4a9eff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+
+.archive-category {
+  color: #777777;
+  text-transform: uppercase;
+}
+
+.archive-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 0.5px;
+  margin: 0 0 12px 0;
+}
+
+.archive-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95em;
+  color: #cccccc;
+  line-height: 1.5;
+  margin: 0 0 18px 0;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.archive-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.archive-tags span {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75em;
+  color: #aaaaaa;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  padding: 4px 10px;
+}
+
+/* ===== Professional Experience section (new, no card box) ===== */
+
+.experience-header {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  padding: 20px 20px 0;
+  text-align: center;
+  display: block;
+}
+
+.experience-header h1 {
+  margin: 0;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 3.4em;
+  color: white;
+}
+
+.exp-card {
+  padding: 20px 24px;
+  color: white;
+  text-align: left;
+  margin: 20px auto 40px;
+  max-width: 1100px;
+}
+
+.exp-card h2 {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.exp-role-meta {
+  font-family: 'Space Mono', monospace;
+  color: #888888;
+  font-size: 0.85em;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.exp-card p,
+.exp-card li {
+  font-family: 'Inter', sans-serif;
+  color: white;
+  line-height: 1.6;
+}
+
+.exp-section {
+  margin-bottom: 50px;
+}
+
+.exp-section:last-child {
+  margin-bottom: 0;
+}
+
+.exp-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.exp-text-col {
+  flex: 1 1 420px;
+}
+
+.exp-img {
+  flex-shrink: 0;
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+  margin-top: 62px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.exp-skills-label {
+  font-family: 'Space Mono', monospace;
+  color: #4a9eff;
+  font-weight: 700;
+  font-size: 0.85em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.exp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 20px 0;
+}
+
+.exp-tags span {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8em;
+  color: #cccccc;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  padding: 5px 12px;
+}
+
+/* ===== Projects section header override (also a <header>, same fix) ===== */
+
+.projects-header {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  padding: 20px 20px 0;
+  text-align: center;
+  display: block;
+}
+
+.projects-header h1 {
+  margin: 0;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 2.6em;
+  color: white;
+}
+
+</style>
 </head>
 <body>
-
+  
 <nav class="site-nav">
     <a href="https://zoejaramillo.com" class="home-link">Home</a>
     <div class="nav-links">
-      <a href="/#about">About</a>
-      <a href="/#projects">Projects</a>
-      <a href="/#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
       <a href="/activities.html">Activities</a>
-      <a href="/#contact">Contact</a>
+      <a href="#contact">Contact</a>
     </div>
   </nav>
 
-  <section class="title-hero">
-    <h1>Acura Integra Project Car</h1>
-  </section>
+  <header>
+    <h1>Zoe<br>Jaramillo</h1>
+    <p>Cal Poly SLO Electrical Engineering Student</p>
+    <p class="location-line">Irvine, CA</p>
+  </header>
 
-  <section class="story-section">
-    <p class="story-date">August 2024</p>
-    <hr class="story-date-line">
-    <div class="story-row">
-      <img src="images/tegstart.jpeg" alt="1998 Acura Integra when purchased" class="story-img">
-      <div class="story-text">
-        <p>In August of 2024, I bought my first car, a 1998 Acura Integra, off Facebook Marketplace. Although mechanically, everything was stock, the outside needed a lot of work.</p>
+
+<section id="options">
+
+</section>
+
+<hr class="section-divider">
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about-row">
+    <div class="about-text-col">
+      <p>Hi! I am a third-year Electrical Engineering student at Cal Poly San Luis Obispo seeking a career in the aerospace industry. Through my internship at Amphenol Borisch Technologies, I gained practical experience in wire harness design and production, electrical system testing, and aerospace manufacturing. As Co-Lead for Wire Harnessing and Sensors on the Cal Poly Mars Rover team, I have experience collaborating with a team of students and professionals to develop and implement space-based technologies. I thrive on solving problems, understanding how and why things work, and tackling challenges that push me outside my comfort zone. Outside of engineering, I'm passionate about cars, photography, and martial arts. You'll usually find me behind a camera, working on my car, or training on the mat. 
+ </p>
+    </div>
+    <img src="images/zoejaramillo1.jpg" alt="Zoe Jaramillo" class="about-img">
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section id="projects">
+
+  <header class="archive-header">
+    <h1>Projects</h1>
+  </header>
+
+  <div class="archive-grid">
+
+    <a href="marsrover.html" class="archive-item">
+      <img src="images/polyrover.jpeg" alt="Mars Rover" class="archive-img">
+      <div class="archive-info">
+        <div class="archive-meta">
+          <span class="archive-ref">AUG. 2025 - PRESENT</span>
+          <span class="archive-category">Aerospace</span>
+        </div>
+        <h2 class="archive-title">2026 Mars Rover</h2>
+        <p class="archive-desc">Led the wire harnessing team for a fully student-designed rover, engineering the 2025 harness architecture for sensors, motors, and power systems.</p>
+        <div class="archive-tags">
+          <span>Harness Design</span>
+          <span>Soldering</span>
+          <span>Systems Integration</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="dac.html" class="archive-item">
+      <img src="images/dac.png" alt="4-bit DAC PCB" class="archive-img">
+      <div class="archive-info">
+        <div class="archive-meta">
+          <span class="archive-ref">MAY 2025</span>
+          <span class="archive-category">PCB Design</span>
+        </div>
+        <h2 class="archive-title">4-bit DAC PCB</h2>
+        <p class="archive-desc">Designed and fabricated a compact 4-bit Weighted Resistor DAC, converting digital signals to analog audio, validated on oscilloscope and Arduino.</p>
+        <div class="archive-tags">
+          <span>LTspice</span>
+          <span>EAGLE</span>
+          <span>PCB Assembly</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="autonomouscar.html" class="archive-item">
+      <img src="images/car1.png" alt="Autonomous Car" class="archive-img">
+      <div class="archive-info">
+        <div class="archive-meta">
+          <span class="archive-ref">JUNE 2023 - AUG. 2023</span>
+          <span class="archive-category">Autonomous Systems</span>
+        </div>
+        <h2 class="archive-title">Autonomous Car</h2>
+        <p class="archive-desc">Designed and implemented an autonomous RC vehicle at UC San Diego's COSMOS program using the DonkeyCar AI Framework, behavior cloning, and OpenCV, achieving fully autonomous lane-following.</p>
+        <div class="archive-tags">
+          <span>DonkeyCar</span>
+          <span>OpenCV</span>
+          <span>Embedded Linux</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="integrabuild.html" class="archive-item">
+      <img src="images/teggy.jpeg" alt="Integra Project Car" class="archive-img">
+      <div class="archive-info">
+        <div class="archive-meta">
+          <span class="archive-ref">AUG. 2024 - PRESENT</span>
+          <span class="archive-category">Automotive</span>
+        </div>
+        <h2 class="archive-title">Integra Project Car</h2>
+        <p class="archive-desc">Ongoing build and restoration of a 1998 Acura Integra, covering mechanical work, electrical troubleshooting, and cosmetic upgrades.</p>
+        <div class="archive-tags">
+          <span>Automotive Repair</span>
+          <span>Wiring</span>
+          <span>Fabrication</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="wireharness.html" class="archive-item">
+      <img src="/images/harness.jpg" alt="2025 FSAE Front Wire Harness" class="archive-img">
+      <div class="archive-info">
+        <div class="archive-meta">
+          <span class="archive-ref">DEC. 2024 - JUNE 2025</span>
+          <span class="archive-category">Motorsport</span>
+        </div>
+        <h2 class="archive-title">2025 FSAE Front Wire Harness</h2>
+        <p class="archive-desc">Designed and assembled the front wire harness for Cal Poly Racing's Formula SAE vehicle in Siemens NX and Rapid Harness, refining routing and connector integration for reliability.</p>
+        <div class="archive-tags">
+          <span>Siemens NX</span>
+          <span>Rapid Harness</span>
+          <span>Crimping</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="slotmachine.html" class="archive-item">
+      <img src="images/sim.png" alt="Slot Machine Game" class="archive-img">
+      <div class="archive-info">
+        <div class="archive-meta">
+          <span class="archive-ref">JUNE 2025</span>
+          <span class="archive-category">FPGA</span>
+        </div>
+        <h2 class="archive-title">Slot Machine Game</h2>
+        <p class="archive-desc">Built a full slot machine game on a Basys 3 FPGA using SystemVerilog, integrating a custom FSM, comparator, and win detection logic.</p>
+        <div class="archive-tags">
+          <span>SystemVerilog</span>
+          <span>FSM Design</span>
+          <span>FPGA</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="backshellfixtures.html" class="archive-item">
+      <img src="images/backshellfixtures.jpg" alt="Backshell Fixtures" class="archive-img">
+      <div class="archive-info">
+        <div class="archive-meta">
+          <span class="archive-ref">REF_ZJ-07</span>
+          <span class="archive-category">Aerospace</span>
+        </div>
+        <h2 class="archive-title">Backshell Fixtures</h2>
+        <p class="archive-desc">Designed and manufactured two custom fixtures in SolidWorks via resin 3D printing to improve wire alignment during aerospace harness backshell assembly.</p>
+        <div class="archive-tags">
+          <span>SolidWorks</span>
+          <span>Resin 3D Printing</span>
+          <span>Fixture Design</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="pottingen1556.html" class="archive-item">
+      <img src="images/pottingen1556.jpg" alt="Potting EN1556" class="archive-img">
+      <div class="archive-info">
+        <div class="archive-meta">
+          <span class="archive-ref">REF_ZJ-08</span>
+          <span class="archive-category">Aerospace</span>
+        </div>
+        <h2 class="archive-title">Potting EN1556</h2>
+        <p class="archive-desc">Authored SolidWorks harness and kit drawings standardizing heater cartridge assembly, molding, and silicone potting to EN1556 spec across five production sites.</p>
+        <div class="archive-tags">
+          <span>Silicone Potting</span>
+          <span>SolidWorks</span>
+          <span>Process Standardization</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section id="experience">
+  <header class="experience-header">
+    <h1>Experience</h1>
+  </header>
+
+  <div class="exp-card">
+
+    <div class="exp-section">
+      <div class="exp-row">
+        <div class="exp-text-col">
+          <h2>Design & Applications Engineering Intern</h2>
+          <p class="exp-role-meta">Amphenol Borisch Technologies — Mesa, AZ // JUNE – AUG. 2026</p>
+          <div class="card-divider"></div>
+          <p>Assembled and electrically tested 14 aerospace prototype wire harnesses by performing wire stripping, crimping, connector pinning, continuity testing, pull-force testing, and contact retention verification.</p>
+          <p>Performed electrical validation using oscilloscopes, function generators, and shorted-stub test fixtures while developing standardized electrical test procedures.</p>
+          <p>Designed two custom fixtures in SolidWorks and manufactured them via resin 3D printing to improve wire alignment during backshell assembly and silicone potting.</p>
+          <p>Authored four SolidWorks harness and kit drawings that standardized heater cartridge assembly, molding, and potting processes, driving consistent manufacturing work instructions across five production sites.</p>
+          <span class="exp-skills-label">Technical Skills</span>
+          <div class="exp-tags">
+            <span>Wire Harness Assembly</span>
+            <span>Crimping</span>
+            <span>Connector Pinning</span>
+            <span>Continuity Testing</span>
+            <span>Oscilloscopes</span>
+            <span>SolidWorks</span>
+            <span>Resin 3D Printing</span>
+          </div>
+          <span class="exp-skills-label">Personable Skills</span>
+          <div class="exp-tags">
+            <span>Attention to Detail</span>
+            <span>Documentation</span>
+            <span>Cross-Site Collaboration</span>
+            <span>Communication</span>
+          </div>
+        </div>
+        <img src="images/amphenol.jpg" alt="Amphenol Borisch Technologies" class="exp-img">
       </div>
     </div>
-  </section>
 
-  <section class="story-section">
-    <p class="story-date">January 2025</p>
-    <hr class="story-date-line">
-    <div class="story-row reverse">
-      <img src="images/shirleyteg.jpeg" alt="Integra badge and turn signal update" class="story-img">
-      <div class="story-text">
-        <p>The first things I fixed was removing the Honda badges and replacing the orange turn signal lights with clear ones.</p>
+    <div class="exp-section">
+      <div class="exp-row">
+        <div class="exp-text-col">
+          <h2>Freelance Photographer</h2>
+          <p class="exp-role-meta">Self-Employed — Irvine, CA</p>
+          <div class="card-divider"></div>
+          <p>Provide paid and freelance photography services with a focus on sports and automotive subjects, alongside client-based work including graduations and environmental portraits.</p>
+          <p>Manage every stage of a shoot from client communication and location scouting to shooting and post-production editing, adapting style and approach to each client's needs.</p>
+          <span class="exp-skills-label">Technical Skills</span>
+          <div class="exp-tags">
+            <span>Photography</span>
+            <span>Photo Editing</span>
+            <span>Lighting</span>
+            <span>Composition</span>
+            <span>Post-Production Workflow</span>
+          </div>
+          <span class="exp-skills-label">Personable Skills</span>
+          <div class="exp-tags">
+            <span>Creativity</span>
+            <span>Attention to Detail</span>
+            <span>Client Communication</span>
+            <span>Adaptability</span>
+          </div>
+        </div>
+        <img src="images/nismo2.jpg" alt="Freelance Photography" class="exp-img">
       </div>
     </div>
-  </section>
 
-  <section class="story-section">
-    <p class="story-date">March 2025</p>
-    <hr class="story-date-line">
-    <div class="story-row">
-      <img src="images/lightsteg.jpeg" alt="Integra halo headlights" class="story-img">
-      <div class="story-text">
-        <p>Replaced headlights with new halo lights.</p>
+    <div class="exp-section">
+      <div class="exp-row">
+        <div class="exp-text-col">
+          <h2>Team Member</h2>
+          <p class="exp-role-meta">Chick-fil-A — Irvine, CA</p>
+          <div class="card-divider"></div>
+          <p>Delivered fast, friendly customer service in a high-volume, fast-paced restaurant environment, handling orders, food preparation, and front-of-house operations.</p>
+          <p>Worked closely with a large team under time pressure, staying organized and adaptable during peak rush periods while maintaining accuracy and a positive customer experience.</p>
+          <span class="exp-skills-label">Technical Skills</span>
+          <div class="exp-tags">
+            <span>Order Accuracy</span>
+            <span>Cash Handling</span>
+            <span>Food Safety & Prep</span>
+          </div>
+          <span class="exp-skills-label">Personable Skills</span>
+          <div class="exp-tags">
+            <span>Teamwork</span>
+            <span>Communication</span>
+            <span>Time Management</span>
+            <span>Customer Service</span>
+          </div>
+        </div>
+        <img src="images/IMG_7745.jpg" alt="Chick-fil-A Team Member" class="exp-img">
       </div>
     </div>
-  </section>
 
+    <div class="exp-section">
+      <div class="exp-row">
+        <div class="exp-text-col">
+          <h2>Police Explorer</h2>
+          <p class="exp-role-meta">Irvine Police Department — Irvine, CA // 3 YEARS</p>
+          <div class="card-divider"></div>
+          <p>Volunteered for three years with the Irvine Police Department's Explorer program, assisting officers with community events, department operations, and public safety initiatives.</p>
+          <p>Developed the ability to remain adaptable and quick-thinking in fast-paced, unpredictable situations, while building strong discipline, communication, and teamwork skills within a structured, service-oriented environment.</p>
+          <span class="exp-skills-label">Technical Skills</span>
+          <div class="exp-tags">
+            <span>Public Safety Procedures</span>
+            <span>Event Operations</span>
+            <span>Structured Protocol</span>
+          </div>
+          <span class="exp-skills-label">Personable Skills</span>
+          <div class="exp-tags">
+            <span>Adaptability</span>
+            <span>Quick Decision-Making</span>
+            <span>Discipline</span>
+            <span>Teamwork</span>
+            <span>Communication</span>
+          </div>
+        </div>
+        <img src="images/another.jpg" alt="Irvine Police Department Explorer" class="exp-img">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact-icons">
+    <a href="mailto:zoejaramillo2024@gmail.com" aria-label="Email Zoe" class="gmail-link">
+      <img src="images/gmail2.jpg" alt="Email" class="contact-icon-img gmail-icon">
+    </a>
+    <a href="https://www.linkedin.com/in/zoe-jaramillo-277915242/" aria-label="Zoe's LinkedIn" target="_blank" class="linkedin-link-box">
+      <img src="images/linkedin.png" alt="LinkedIn" class="contact-icon-img">
+    </a>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section>
+  <header class="projects-header">
+    <h1>Projects</h1>
+  </header>
+
+  <div class="project-card">
+
+    <div class="project-section">
+      <h2>4-bit DAC PCB Design</h2>
+      <div class="card-divider"></div>
+      <p>I designed and fabricated a compact 4-bit Weighted Resistor DAC PCB using LTspice for simulation and EAGLE for layout. The board successfully converted digital signals to analog audio, validated through oscilloscope testing and Arduino integration. This project reinforced my skills in circuit design, PCB assembly, and mixed-signal analysis, while demonstrating a sustainable, low-power hardware solution.</p>
+      <div class="image-row">
+        <img src="images/dac.png" alt="4-bit DAC PCB" class="card-img">
+        <img src="images/schematic.png" alt="Schematic" class="card-img2">
+      </div>
+      <div class="pdf-link">
+        <a href="EE143_FinalProjectReport.pdf" target="_blank">View Full Project Report (PDF)</a>
+      </div>
+    </div>
+
+    <div class="project-section">
+      <h2>Slot Machine Game</h2>
+      <div class="card-divider"></div>
+      <ul>
+        <li>Built a complete slot machine game system on a Basys 3 FPGA using SystemVerilog, integrating a custom FSM, comparator, random generator, LED drivers, and win detection logic.</li>
+        <li>Collaborated in a 3-person team to debug and implement modules, including state machines and one-shot timing extensions for buzzer and LED signaling, verified through behavioral simulations and hardware testing.</li>
+      </ul>
+      <img src="images/sim.png" alt="Schematic" class="card-img3">
+    </div>
+
+  </div>
+</section>
+
+  <footer>© <span id="y"></span> Zoe</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
