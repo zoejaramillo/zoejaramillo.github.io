@@ -167,21 +167,6 @@
       margin: 0 0 16px 0;
     }
 
-    .story-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .story-tags span {
-      font-family: 'Space Mono', monospace;
-      font-size: 0.8em;
-      color: #cccccc;
-      border: 1px solid #333333;
-      border-radius: 4px;
-      padding: 5px 12px;
-    }
-
     .story-date {
       font-family: 'Archivo Black', sans-serif;
       font-weight: 400;
@@ -222,10 +207,32 @@
       font-family: 'Archivo Black', sans-serif;
       font-weight: 400;
       text-transform: uppercase;
-      color: white;
+      color: #4a9eff;
       font-size: 5em;
       letter-spacing: 1px;
       line-height: 1.0;
+    }
+
+    /* ===== Summary section ===== */
+
+    .summary-section {
+      max-width: 1100px;
+      margin: 0 auto 100px;
+      padding: 0 20px;
+    }
+
+    .summary-section p {
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      font-size: 1.15em;
+      line-height: 1.75;
+      letter-spacing: 0.2px;
+      color: #d0d0d0;
+      margin: 0 0 20px 0;
+    }
+
+    .summary-section p:last-child {
+      margin-bottom: 0;
     }
 
   </style>
@@ -255,11 +262,6 @@
       <div class="story-text">
         <h3 class="story-title">Bought the Car</h3>
         <p>In August 2024, I purchased my 1998 Acura Integra LS from Facebook Marketplace as a personal project car. I wanted a project that I could work on throughout the year and use to learn more about automotive electrical and mechanical systems. Since buying it, I have taken on each modification and repair as an opportunity to become more comfortable working with automotive systems.</p>
-        <div class="story-tags">
-          <span>Automotive Systems</span>
-          <span>Mechanical Troubleshooting</span>
-          <span>Maintenance</span>
-        </div>
       </div>
     </div>
   </section>
@@ -272,10 +274,6 @@
       <div class="story-text">
         <h3 class="story-title">Clear Turn Signals</h3>
         <p>I replaced the original orange turn signals with clear ones and removed the existing Honda badges to clean up the front and back ends of the car. The installation gave me more experience taking apart exterior components without damaging surrounding parts, identifying mounting points and hardware, and making sure the new components fit and functioned correctly.</p>
-        <div class="story-tags">
-          <span>Component Installation</span>
-          <span>Mechanical Fitment</span>
-        </div>
       </div>
     </div>
   </section>
@@ -288,12 +286,6 @@
       <div class="story-text">
         <h3 class="story-title">Halo Headlights</h3>
         <p>I replaced the factory headlights with aftermarket halo headlights, which introduced me to modifying the car's electrical system rather than only changing mechanical components. I worked through the wiring required for the new lights, connected everything, and tested it to make sure everything operated correctly. This project gave me more confidence working with automotive wiring and helped me better understand how modifications can be integrated into an existing electrical system.</p>
-        <div class="story-tags">
-          <span>Automotive Wiring</span>
-          <span>Electrical Troubleshooting</span>
-          <span>Connectors</span>
-          <span>System Integration</span>
-        </div>
       </div>
     </div>
     <div class="story-row reverse">
@@ -301,14 +293,6 @@
       <div class="story-text">
         <h3 class="story-title">Bumper Replacement</h3>
         <p>When I bought the car, the front bumper was held on by zip ties, and the paint was very worn out. I purchased a replacement front bumper off eBay, had it paint-matched, and installed it myself. Getting the bumper to sit correctly required more than bolting it on; I had to work through alignment and fitment issues while being cautious of the gaps between the bumper, headlights, and surrounding body panels. This taught me to pay closer attention to mounting geometry and how small adjustments at individual attachment points can affect the alignment of an entire component.</p>
-        <div class="story-tags">
-          <span>Mechanical Fitment</span>
-          <span>Alignment</span>
-          <span>Mounting Hardware</span>
-          <span>Hand Tools</span>
-          <span>Dimensional Awareness</span>
-          <span>Troubleshooting</span>
-        </div>
       </div>
     </div>
   </section>
@@ -320,11 +304,6 @@
       <div class="story-text">
         <h3 class="story-title">Spoiler</h3>
         <p>Bought spoiler from eBay, got it painted and installed it. Drilled holes into trunk and bought longer screws to fit. Also got custom plate called "TEGGGY"</p>
-        <div class="story-tags">
-          <span>Drilling</span>
-          <span>Fabrication</span>
-          <span>Automotive Repair</span>
-        </div>
       </div>
     </div>
   </section>
@@ -339,12 +318,18 @@
       <div class="story-text">
         <h3 class="story-title">Backglass</h3>
         <p>Backglass shattered :(</p>
-        <div class="story-tags">
-          <span>Problem Solving</span>
-          <span>Automotive Repair</span>
-        </div>
       </div>
     </div>
+  </section>
+
+  <hr class="big-heading-divider">
+  <div class="big-heading">
+    <h2>Summary</h2>
+  </div>
+
+  <section class="summary-section">
+    <p>This project has been an ongoing way for me to build hands-on experience outside of the classroom, working through real mechanical and electrical problems on a car I use every day. From swapping exterior components to rewiring the headlights, each repair pushed me to slow down, understand how the individual pieces of a system fit together, and troubleshoot issues as they came up rather than avoid them.</p>
+    <p>Beyond the specific repairs, the Integra has taught me patience, attention to detail, and comfort working with imperfect, real-world conditions where nothing always fits or connects exactly as expected. I plan to keep using this car as a platform to keep learning, whether that means tackling the next unexpected repair or taking on a new modification.</p>
   </section>
 
 </body>
