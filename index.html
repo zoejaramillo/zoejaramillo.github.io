@@ -423,11 +423,22 @@
 }
 
 .exp-card {
+  position: relative;
   padding: 20px 24px;
   color: white;
   text-align: left;
   margin: 20px auto 40px;
   max-width: 1100px;
+}
+
+.exp-card::before {
+  content: '';
+  position: absolute;
+  top: 26px;
+  bottom: 26px;
+  left: 4px;
+  width: 2px;
+  background: linear-gradient(to bottom, #4a9eff, #333333 85%, transparent);
 }
 
 .exp-card h2 {
@@ -506,7 +517,7 @@
   object-fit: cover;
   object-position: center;
   border-radius: 0;
-  margin-top: 62px;
+  margin-top: 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -749,7 +760,7 @@
       <div class="exp-row">
         <div class="exp-text-col">
           <h2>Freelance Photographer</h2>
-          <p class="exp-role-meta"><span class="exp-company">Self-Employed</span> — Irvine, CA</p>
+          <p class="exp-role-meta"><span class="exp-company">Self-Employed</span> — Irvine, CA <span class="exp-date">// JUNE 2023 – PRESENT</span></p>
           <div class="card-divider"></div>
           <ul class="exp-bullets">
             <li>Provide paid and freelance photography services with a focus on sports and automotive subjects, alongside client-based work including graduations and environmental portraits.</li>
@@ -764,7 +775,7 @@
       <div class="exp-row">
         <div class="exp-text-col">
           <h2>Team Member</h2>
-          <p class="exp-role-meta"><span class="exp-company">Chick-fil-A</span> — Irvine, CA</p>
+          <p class="exp-role-meta"><span class="exp-company">Chick-fil-A</span> — Irvine, CA <span class="exp-date">// AUG. 2025 – PRESENT</span></p>
           <div class="card-divider"></div>
           <ul class="exp-bullets">
             <li>Delivered fast, friendly customer service in a high-volume, fast-paced restaurant environment, handling orders, food preparation, and front-of-house operations.</li>
@@ -779,7 +790,7 @@
       <div class="exp-row">
         <div class="exp-text-col">
           <h2>Police Explorer</h2>
-          <p class="exp-role-meta"><span class="exp-company">Irvine Police Department</span> — Irvine, CA <span class="exp-date">// 3 YEARS</span></p>
+          <p class="exp-role-meta"><span class="exp-company">Irvine Police Department</span> — Irvine, CA <span class="exp-date">// JAN. 2022 – AUG. 2024</span></p>
           <div class="card-divider"></div>
           <ul class="exp-bullets">
             <li>Volunteered for three years with the Irvine Police Department's Explorer program, assisting officers with community events, department operations, and public safety initiatives.</li>
